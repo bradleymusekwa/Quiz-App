@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Quiz Game</title>
+    <title>Quiz App</title>
 </head>
 <body>
     <main class="main">
         <header class="header">
-            <a href="#" class="logo">Quiz Game.</a>
-            <nav class="header">
-                <a href="#">Home</a>
-            </nav>
+            <a href="#" class="logo">Quiz App.</a>
         </header>
+        <section class="home">
+            <div class="home_content">
+                <h1>JavaScript Quiz Game</h1>
+                <p>Welcome to the exciting world of JavaScript! Are you ready to put your coding knowledge to the test and have some fun?
+                Our JavaScript quiz game is designed to challenge your understanding of this versatile and dynamic programming language. Whether you're a seasoned developer looking to fine-tune your skills or a beginner eager to learn, this quiz game has
+                something for everyone. Get ready to answer questions ranging from basic syntax to advanced concepts, and watch your
+                JavaScript prowess grow with each correct answer.</p>
+                    <button class="start-btn">Start Quiz</button>
+            </div>
+        </section>
     </main> 
+    
     <div class="app">
         <h1>JavaScript Quiz Game</h1>
         <div class="quiz">
@@ -25,9 +33,30 @@
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
+            <div class="btn-group">
+            <button id="exit-btn">Exit</button>
             <button id="next-btn">Next</button>
+            </div>
         </div>
     </div> 
+    <script>
+        // adding functionality to the start button and the exi button
+        const startButton = document.querySelector('.start-btn');
+        const quizApp = document.querySelector('.app');
+        const exitButton = document.getElementById("exit-btn");
+        const main = document.querySelector('.main');
+
+        startButton.onclick = () => {
+            quizApp.classList.add('active');
+            main.classList.add('active');
+        }
+        
+        exitButton.onclick = () => {
+            quizApp.classList.remove('active');
+            main.classList.remove('active');
+        }
+
+    </script>
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,24 +1,24 @@
-// edit these questions
+// questions Array
 const questions = [
   {
-    question: "In JavaScript, what is a block of statement?",
+    question: "What does HTML stand for?",
     answers: [
-      { text: "Conditional block", correct: false },
-      { text: "block that contains a single statement", correct: false },
-      { text: "both conditional block and a single statement", correct: false },
+      { text: "Hypertext Machine Language", correct: false },
+      { text: "Hyperloop Markup Language", correct: false },
+      { text: "Hyperdrive Markup Language", correct: false },
       {
-        text: "block that combines a number of statements into a single compound statement",
+        text: "HyperText Markup Language",
         correct: true,
       },
     ],
   },
   {
-    question: "Function and let are known as:",
+    question: "What does CSS stand for?",
     answers: [
-      { text: "Keywords", correct: false },
-      { text: "Data types", correct: false },
-      { text: "Declaration statements", correct: true },
-      { text: "Prototypes", correct: false },
+      { text: "Creative Style Sheets", correct: false },
+      { text: "Current Style Solutions", correct: false },
+      { text: "Cascading Style Sheets", correct: true },
+      { text: "Cool Styling Services", correct: false },
     ],
   },
   {
@@ -80,18 +80,18 @@ const questions = [
     ],
   },
   {
-    question: "What does … operator do in JS?",
+    question: "What does JavaScript allow you to do on a webpage?",
     answers: [
       {
-        text: "It is used to spread iterables to individual elements",
+        text: "Add interactivity and dynamic content",
         correct: true,
       },
       {
-        text: "It is used to describe a datatype of undefined size",
+        text: "Create and apply styles",
         correct: false,
       },
-      { text: "No such operator exists", correct: false },
-      { text: "None of the above", correct: false },
+      { text: "Structure the content", correct: false },
+      { text: "Create a responsive layout", correct: false },
     ],
   },
   {
