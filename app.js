@@ -25,7 +25,7 @@ const questions = [
     question:
       "Which of the following methods is used to access HTML elements using Javascript",
     answers: [
-      { text: "getElementbyid()", correct: false },
+      { text: "getElementbyId()", correct: false },
       { text: "getElementbyClassName()", correct: false },
       { text: "Both A and B", correct: true },
       { text: "None of the above", correct: false },
